@@ -34,3 +34,7 @@ body{
     transform: scale(1);
     transform-origin: left;
 }
+a > i{
+    font-size: 24px;
+    cursor: pointer;
+}
