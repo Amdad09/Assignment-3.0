@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse4Pets</title>
+    <link rel="stylesheet" href="pet.css" />
+    <link
+      rel="shortcut icon"
+      href="./c1-assets/logo-header.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e9f22537a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <!-- navigate section  -->
+      <div class="bg-[#fff9f4] border-b border-black md:border-none">
+        <nav class="w-11/12 mx-auto flex justify-between items-center py-8">
+          <!-- website name and logo  -->
+          <div class="flex items-center gap-x-3 cursor-pointer">
+            <img class="w-full" src="./c1-assets/logo-header.png" alt="logo" />
+            <h4 class="text-2xl">Browse<span>4</span>Pets</h4>
+          </div>
+          <!-- pages list  -->
+          <div class="navigate lg:flex gap-x-8 hidden">
+            <a href="#">Find a pet</a>
+            <a href="#">Breeds</a>
+            <a href="#">Contact us</a>
+          </div>
+          <!-- search and login side  -->
+          <div class="flex gap-x-4 items-center">
+            <div class="md:flex gap-x-4 items-center hidden">
+              <i
+                class="fa-solid fa-bell cursor-pointer md:hidden lg:block text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-magnifying-glass cursor-pointer block md:hidden lg:block text-xl"
+              ></i>
+              <!-- button  -->
+              <button
+                class="border border-[#ffdc26] py-2 px-7 text-xl bg-transparent rounded-lg hover:bg-[#ffdc26] duration-500"
+              >
+                Login
+              </button>
+              <button
+                class="border border-[#ffdc26] py-2 px-7 text-xl bg-transparent rounded-lg hover:bg-[#ffdc26] duration-500"
+              >
+                Register
+              </button>
+            </div>
+
+            <!-- menu bar  -->
+            <i class="fa-solid fa-bars block lg:hidden text-2xl"></i>
+          </div>
+        </nav>
+      </div>
+      <!-- banner section  -->
+      <section class="w-11/12 mx-auto banner-section  h-[450px] lg:h-[700px] mt-[70px] mb-[140px] bg-contain bg-bottom bg-no-repeat bg-[url('./c1-assets/cat-big.png')]">
+        <!-- banner content  -->
+        <div class="space-y-6 w-full lg:w-[672px] ">
+            <h3 class="text-[30px] md:text-[56px] font-adlam">Pamper Your Pet, Because They Deserve the Best</h3>
+            <p class="md:text-xl text-base">
+                Discover a world of treats, toys, and essentials handpicked for your
+                furry friends. Shop now and make tails wag with joy!
+            </p>
+            <!-- find button  -->
+            <button
+                class="border border-[#ffdc26] py-2 px-7 text-xl bg-[#FFF9F4] rounded-lg hover:bg-[#ffdc26] duration-500"
+            >
+                Find a pet
+            </button>
+        </div>
+        <!-- <div class="w-full"></div> -->
+    </section>
+    </header>
+    <main class="">
+        <!-- Browse By Categories -->
+        <section class="w-11/12 mx-auto mb-[130px]">
+            <h3 class="font-adlam text-4xl">Browse By Categories</h3>
+            <!-- categories container  -->
+            <div class="flex flex-wrap justify-center gap-6 mt-12">
+                <!-- dog -->
+                <div class="py-8 px-12 bg-[#f9df8a] rounded-xl text-center">
+                    <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center">
+                        <img src="./c1-assets/dog-cartoon.png" alt="dog">
+                    </div>
+                    <h3 class="font-adlam text-xl mt-6 mb-3">Dog</h3>
+                    <p>3 items</p>
+                </div>
+                <!-- fish  -->
+                <div class="py-8 px-12 bg-[#f9df8a] rounded-xl text-center">
+                    <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center">
+                        <img src="./c1-assets/fish-cartoon.png" alt="fish">
+                    </div>
+                    <h3 class="font-adlam text-xl mt-6 mb-3">Fish</h3>
+                    <p>3 items</p>
+                </div>
+                <!-- cat -->
+                <div class="py-8 px-12 bg-[#f9df8a] rounded-xl text-center">
+                    <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center">
+                        <img src="./c1-assets/cat-cartoon.png" alt="cat">
+                    </div>
+                    <h3 class="font-adlam text-xl mt-6 mb-3">Cat</h3>
+                    <p>3 items</p>
+                </div>
+                <!-- bird  -->
+                <div class="py-8 px-12 bg-[#f9df8a] rounded-xl text-center">
+                    <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center">
+                        <img src="./c1-assets/bird-cartoon.png" alt="bird">
+                    </div>
+                    <h3 class="font-adlam text-xl mt-6 mb-3">Birds</h3>
+                    <p>3 items</p>
+                </div>
+                <!-- small pet  -->
+                <div class="py-8 px-12 bg-[#f9df8a] rounded-xl text-center">
+                    <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center">
+                        <img src="./c1-assets/mouse-cartoon.png" alt="mouse">
+                    </div>
+                    <h3 class="font-adlam text-xl mt-6 mb-3">Small pet</h3>
+                    <p>3 items</p>
+                </div>
+                <!-- rabbit  -->
+                <div class="py-8 px-12 bg-[#f9df8a] rounded-xl text-center">
+                    <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center">
+                        <img src="./c1-assets/rabbit-cartoon.png" alt="dog">
+                    </div>
+                    <h3 class="font-adlam text-xl mt-6 mb-3">Rabit</h3>
+                    <p>2 items</p>
+                </div>
+            </div>
+        </section>
+        <!-- Trending Pet Products -->
+         <section class="bg-[#fff9f4] py-[130px]">
+            <div class="w-11/12 mx-auto">
+                <h3 class="font-adlam text-4xl mb-12">Trending Pet Products</h3>
+                <!-- pet items -->
+                <div class="lg:flex gap-6">
+                    <!-- pet shop -->
+                    <div class="bg-[#f9df8a] relative rounded-xl px-7 py-12 space-y-6 h-[400px] mb-6">
+                        <h3 class="text-3xl font-adlam">T-shirt for dogs</h3>
+                        <p>Discover world a treats , toys and essentials handpicker for</p>
+                        <button class="border py-2 px-7 text-xl bg-white rounded-lg">Shop now</button>
+                        <img class="absolute bottom-0 -right-4" src="./c1-assets/cute-pet-small.png" alt="">
+                    </div>
+                    <!-- all products and with rating  -->
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 w-full">
+                        <div class="flex items-center border border[#1111111a] rounded-[10px] bg-white">
+                            <div class="bg-[#fff9f4] w-20 h-20 rounded-[10px] flex justify-center items-center m-4">
+                                <img src="./c1-assets/dog-cartoon.png" alt="dog">
+    
+                            </div>
+                            <div class="space-y-0">
+                                <div class="flex items-center gap-x-1">
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <h3 class="font-medium text-xl">Pet Bed</h3>
+                                <p class="font-medium">&dollar;49.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center border border[#1111111a] rounded-[10px] bg-white">
+                            <div class="bg-[#fff9f4] w-20 h-20 rounded-[10px] flex justify-center items-center m-4">
+                                <img src="./c1-assets/fish-cartoon.png" alt="fish">
+    
+                            </div>
+                            <div class="space-y-0">
+                                <div class="flex items-center gap-x-1">
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <h3 class="font-medium text-xl">Pet Bed</h3>
+                                <p class="font-medium">&dollar;49.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center border border[#1111111a] rounded-[10px] bg-white">
+                            <div class="bg-[#fff9f4] w-20 h-20 rounded-[10px] flex justify-center items-center m-4">
+                                <img src="./c1-assets/rabbit-cartoon.png" alt="rabbit">
+    
+                            </div>
+                            <div class="space-y-0">
+                                <div class="flex items-center gap-x-1">
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <h3 class="font-medium text-xl">Pet Bed</h3>
+                                <p class="font-medium">&dollar;49.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center border border[#1111111a] rounded-[10px] bg-white">
+                            <div class="bg-[#fff9f4] w-20 h-20 rounded-[10px] flex justify-center items-center m-4">
+                                <img src="./c1-assets/mouse-cartoon.png" alt="mouse">
+    
+                            </div>
+                            <div class="space-y-0">
+                                <div class="flex items-center gap-x-1">
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <h3 class="font-medium text-xl">Pet Bed</h3>
+                                <p class="font-medium">&dollar;49.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center border border[#1111111a] rounded-[10px] bg-white">
+                            <div class="bg-[#fff9f4] w-20 h-20 rounded-[10px] flex justify-center items-center m-4">
+                                <img src="./c1-assets/cat-cartoon.png" alt="cat">
+    
+                            </div>
+                            <div class="space-y-0">
+                                <div class="flex items-center gap-x-1">
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <h3 class="font-medium text-xl">Pet Bed</h3>
+                                <p class="font-medium">&dollar;49.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center border border[#1111111a] rounded-[10px] bg-white">
+                            <div class="bg-[#fff9f4] w-20 h-20 rounded-[10px] flex justify-center items-center m-4">
+                                <img src="./c1-assets/mouse-cartoon.png" alt="mouse">
+    
+                            </div>
+                            <div class="space-y-0">
+                                <div class="flex items-center gap-x-1">
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <h3 class="font-medium text-xl">Pet Bed</h3>
+                                <p class="font-medium">&dollar;49.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center border border[#1111111a] rounded-[10px] bg-white">
+                            <div class="bg-[#fff9f4] w-20 h-20 rounded-[10px] flex justify-center items-center m-4">
+                                <img src="./c1-assets/dog-cartoon.png" alt="dog">
+    
+                            </div>
+                            <div class="space-y-0">
+                                <div class="flex items-center gap-x-1">
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <h3 class="font-medium text-xl">Pet Bed</h3>
+                                <p class="font-medium">&dollar;49.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center border border[#1111111a] rounded-[10px] bg-white">
+                            <div class="bg-[#fff9f4] w-20 h-20 rounded-[10px] flex justify-center items-center m-4">
+                                <img src="./c1-assets/fish-cartoon.png" alt="fish">
+    
+                            </div>
+                            <div class="space-y-0">
+                                <div class="flex items-center gap-x-1">
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <h3 class="font-medium text-xl">Pet Bed</h3>
+                                <p class="font-medium">&dollar;49.99</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center border border[#1111111a] rounded-[10px] bg-white">
+                            <div class="bg-[#fff9f4] w-20 h-20 rounded-[10px] flex justify-center items-center m-4">
+                                <img src="./c1-assets/rabbit-cartoon.png" alt="rabbit">
+    
+                            </div>
+                            <div class="space-y-0">
+                                <div class="flex items-center gap-x-1">
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <h3 class="font-medium text-xl">Pet Bed</h3>
+                                <p class="font-medium">&dollar;49.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- price section  -->
+        <section class="w-11/12 mx-auto my-[130px]">
+            <h3>Everyday low Price</h3>
+        </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
