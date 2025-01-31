@@ -30,7 +30,9 @@
           <!-- website name and logo  -->
           <div class="flex items-center gap-x-3 cursor-pointer">
             <img class="w-full" src="./c1-assets/logo-header.png" alt="logo" />
-            <h4 class="text-2xl">Browse<span>4</span>Pets</h4>
+            <h4 class="text-2xl">
+              Browse<span class="text-[#ffdc26]">4</span>Pets
+            </h4>
           </div>
           <!-- pages list  -->
           <div class="navigate lg:flex gap-x-8 hidden">
@@ -155,6 +157,7 @@
           </div>
         </div>
       </section>
+      
       <!-- Trending Pet Products -->
       <section class="bg-[#fff9f4] py-[130px]">
         <div class="w-11/12 mx-auto">
@@ -337,61 +340,118 @@
           </div>
         </div>
       </section>
+      
       <!-- price section  -->
-      <section class="w-11/12 mx-auto my-[130px]">
+      <section class="w-11/12 mx-auto mt-[130px]">
         <h3 class="font-adlam text-4xl mb-12">Everyday low Price</h3>
-        
-      </section>
-      <section class="w-11/12 mx-auto relative top-52">
-        <div class="hero bg-[#fff9f4] rounded-2xl">
-            <div class="hero-content flex-col lg:flex-row gap-[110px]">
-              <img
-                src="./c1-assets/cute-pet-mid.png" alt="cute dog"
-                class="max-w-sm rounded-lg " />
-              <div>
-                <h1 class="text-4xl text-black font-adlam">Get Pawsome News!</h1>
-                <p class="py-6 text-[#111111] text-xl">
-                    Exclusive training tips, ticks, product deals and more.
+        <div class="lg:flex gap-x-6">
+          <!-- under price section -->
+          <div class="bg-gradient-to-r from-[#f8ccfb] to-[#acd2fd] rounded-xl md:flex flex-1">
+            <div class="md:flex lg:items-center w-full pl-20">
+              <div class="pt-10">
+                <p class="text-xl hidden lg:block">Under Price</p>
+                <h1 class="text-3xl font-adlam">Pet Grooming Mitt</h1>
+                <p class="py-6 text-2xl font-adlam hidden lg:block text-white">
+                  (Easy Hair Removal)
                 </p>
-                <input class="bg-white p-3 w-full" type="email" name="" id="" placeholder="Enter email ....">
-                <button class="border border-[#ffdc26] py-2 px-7 text-xl bg-[#FFF9F4] rounded-lg hover:bg-[#ffdc26] duration-500 mt-[38px]">Subscribe</button>
+                <h3 class="font-adlam text-[56px]">$7.99</h3>
               </div>
+              <img src="./c1-assets/cute-dog-mid.png" alt="cute dog" class="mt-4 md:mt-0 w-2/3" />
             </div>
           </div>
+          <!-- pet shop -->
+          <div class="bg-gradient-to-r from-[#fff9f4] to-[#f9df8a] rounded-xl mt-6 lg:mt-0">
+            <div class="px-12 pt-12">
+              <div class="">
+                <h1 class="text-3xl font-adlam w-full">T-Shirt for Dogs</h1>
+                <h3 class="font-adlam text-[56px] text-[#ffdc26]">$7.99</h3>
+              </div>
+              <img src="./c1-assets/cute-pet-mid.png" alt="cute pet" class="max-w-sm rounded-lg relative left-11 top-0" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- information area  -->
+      <section class="w-11/12 mx-auto relative top-52">
+        <div class="hero bg-[#fff9f4] rounded-2xl">
+          <div class="hero-content flex-col lg:flex-row gap-x[110px]">
+            <!-- image  -->
+            <img
+              src="./c1-assets/cute-pet-mid.png"
+              alt="cute dog"
+              class="max-w-sm rounded-lg"
+            />
+            <!-- content and input  -->
+            <div>
+              <h1 class="text-4xl text-black font-adlam">Get Pawsome News!</h1>
+              <p class="py-6 text-[#111111] text-xl">
+                Exclusive training tips, ticks, product deals and more.
+              </p>
+              <!-- email input  -->
+              <input
+                class="bg-white p-3 w-full"
+                type="email"
+                name=""
+                id=""
+                placeholder="Enter email ...."
+              />
+              <button
+                class="border border-[#ffdc26] py-2 px-7 text-xl bg-[#FFF9F4] rounded-lg hover:bg-[#ffdc26] duration-500 mt-[38px]"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <!-- footer section  -->
     <footer class="bg-[#ffdc2680] pb-[130px]">
-        <footer class="w-11/12 mx-auto footer items-end lg:flex justify-between pt-[350px]">
-            <nav>
-                <div class="flex items-center gap-2">
-                    <img src="./c1-assets/logo-footer.png" alt="logo">
-                    <h6 class="text-black text-2xl">Browse Pets</h6>
-                </div>
-              <p class="text-xl">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>friends</p>
-            </nav>
-            <nav class="relative top-2 space-y-3">
-              <a class="link link-hover text-xl">Find a pet</a>
-              <a class="link link-hover text-xl">Breeds</a>
-              <a class="link link-hover text-xl">Contact us</a>
-            </nav>
-            <nav>
-              <h6 class="text-black font-medium text-lg">Follow us</h6>
-              <div class="grid grid-flow-col gap-4">
-                <a>
-                    <i class="fa-brands fa-facebook hover:scale-125 duration-300"></i>
-                </a>
-                <a>
-                    <i class="fa-brands fa-instagram hover:scale-125 duration-300"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-linkedin hover:scale-125 duration-300"></i>
-                </a>
-                <a>
-                    <i class="fa-brands fa-youtube hover:scale-125 duration-300"></i>
-                </a>
-              </div>
-            </nav>
-        </footer>
+      <footer
+        class="w-11/12 mx-auto footer items-end lg:flex justify-between pt-[350px]"
+      >
+        <!-- footer logo and with some content  -->
+        <nav>
+          <div class="flex items-center gap-2">
+            <img src="./c1-assets/logo-footer.png" alt="logo" />
+            <h6 class="text-black text-2xl">Browse Pets</h6>
+          </div>
+          <p class="text-xl">
+            Discover a world of treats, toys, and <br />
+            essentials handpicked for your furry <br />friends
+          </p>
+        </nav>
+        <!-- footer navlink  -->
+        <nav class="relative top-2 space-y-3">
+          <a class="link link-hover text-xl">Find a pet</a>
+          <a class="link link-hover text-xl">Breeds</a>
+          <a class="link link-hover text-xl">Contact us</a>
+        </nav>
+        <!-- contact us on social media -->
+        <nav>
+          <h6 class="text-black font-medium text-lg">Follow us</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <i class="fa-brands fa-facebook hover:scale-125 duration-300"></i>
+            </a>
+            <a>
+              <i
+                class="fa-brands fa-instagram hover:scale-125 duration-300"
+              ></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-linkedin hover:scale-125 duration-300"></i>
+            </a>
+            <a>
+              <i class="fa-brands fa-youtube hover:scale-125 duration-300"></i>
+            </a>
+          </div>
+        </nav>
+      </footer>
     </footer>
   </body>
 </html>
