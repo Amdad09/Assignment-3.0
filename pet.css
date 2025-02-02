@@ -38,3 +38,47 @@ a > i{
     font-size: 24px;
     cursor: pointer;
 }
+
+@keyframes pulseAnimation{ 
+    0% { 
+      transform: scale(1); 
+    } 
+    50% { 
+      transform: scale(1.05); 
+    } 
+    100% { 
+      transform: scale(1); 
+    } 
+  } 
+
+  /* Add animation class */ 
+  .pulse-button { 
+    animation: pulseAnimation 1.5s ease infinite; 
+  } 
+
+
+  @keyframes borderAnimation { 
+      0% { 
+        border-color: #3490dc; 
+      } 
+      25% { 
+        border-color: #f97316; 
+      } 
+      50% { 
+        border-color: #10b981; 
+      } 
+      75% { 
+        border-color: #8b5cf6; 
+      } 
+      100% { 
+        border-color: #ef4444; 
+      } 
+    } 
+ 
+    /* Apply the animation */ 
+    .border-animation{ 
+      animation: borderAnimation 3s linear infinite; 
+    } 
+    .pulse-border-animation { 
+      animation: borderAnimation 3s linear infinite, pulseAnimation 1.5s ease-in-out infinite; 
+    }
